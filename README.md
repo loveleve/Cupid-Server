@@ -6,4 +6,5 @@ GitFlow 전략을 사용하여 브랜치를 관리합니다.
 + Develop : 개발이 완료된 부분만 Merge합니다.
 + Feature : 기능을 개발하는 브랜치 입니다.
 + Release : 다음 버전 출시를 준비하는 브랜치입니다.
++ Hotfixs : Master 브랜치에서 발생한 버그를 수정하는 브랜치입니다.
 ![image](https://user-images.githubusercontent.com/59078557/211503097-a49c710c-9fc9-43af-9060-c1c4b978bef1.png)
