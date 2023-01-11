@@ -1,10 +1,5 @@
 # REST API 명세
 
-- 홈화면
-    - path: /home
-    - Method : get
-    - Success Status : 2xx
-    - fail status : 4xx, 5xx error
 - 로그인
     - path : /auth
     - Method : post
@@ -12,7 +7,7 @@
     - fail status : 4xx error, 5xx error
 - 로그아웃
     - path : /auth
-    - Method : post
+    - Method : delete
     - Success Status : 2xx
     - fail status : 4xx error, 5xx error
 - 회원가입
@@ -31,32 +26,22 @@
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 회원 전체 보기
-    - path : / users
+    - path : /users
     - Method : get
     - Succes Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 회원 조건 검색
-    - path : /users/{userid}
+    - path : /users
     - Method : get
     - Success Status : 2xx
-    - fail Status : 4xx error, 5xx error
-- 상대방 검색화면
-    - path : /search
-    - Method : get
-    - Success Status : 2xx
-    - fail Status : 4xx error, 5xx error
-- 상대방 고급 검색 후 결과화면
-    - path : /results
-    - Method : get
-    - Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 찜
-    - path :/users/{username}/following/{target-username}
+    - path :/followers/{username}
     - Method : post
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 신고
-    - path : /users/{useranme}/reporting/{target-username}
+    - path : /followers/{username}
     - Method : post
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
