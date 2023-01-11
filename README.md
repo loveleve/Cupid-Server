@@ -3,9 +3,9 @@
 2. fork 한 Repository를 clone 한다.
 3. git remote add upstream <메인 저장소 주소>를 통해 upstream 설정을 한다.
 4. git fetch를 통해 최신 코드를 받아온다
-5. upstream develop 브랜치에서 feature 브랜치를 생성한다.
+5. upstream/develop 브랜치에서 feature 브랜치를 생성한다.
 6. 작업 완료된 fearure 브랜치를 origin 브랜치로 push 한다.
-7. 해당 브랜치를 upstream으로 PR을 올린다. (이때 리뷰할 사람을 선택한다.)
+7. 해당 브랜치를 upstream으로 PR을 올린다.
 8. 코드 리뷰 진행 후 Merge를 진행한다.
 
 ## 브랜치전략
