@@ -1,3 +1,53 @@
+# REST API 명세
+
+- 로그인
+    - path : /auth
+    - Method : post
+    - Success Status : 2xx
+    - fail status : 4xx error, 5xx error
+- 로그아웃
+    - path : /auth
+    - Method : delete
+    - Success Status : 2xx
+    - fail status : 4xx error, 5xx error
+- 회원가입
+    - path : /users
+    - Method : Post
+    - Success Status : 2xx
+    - fail status : 4xx error, 5xx error
+- 회원탈퇴
+    - path : /users
+    - Method : delete
+    - Success Status : 2xx
+    - fail Status : 4xx error, 5xx error
+- 회원정보변경
+    - path : /users
+    - Method : put
+    - Success Status : 2xx
+    - fail Status : 4xx error, 5xx error
+- 회원 전체 보기
+    - path : /users
+    - Method : get
+    - Succes Status : 2xx
+    - fail Status : 4xx error, 5xx error
+- 회원 조건 검색
+    - path : /users
+    - Method : get
+    - Success Status : 2xx
+    - fail Status : 4xx error, 5xx error
+- 찜
+    - path :/followers/{username}
+    - Method : post
+    - Success Status : 2xx
+    - fail Status : 4xx error, 5xx error
+- 신고
+    - path : /followers/{username}
+    - Method : post
+    - Success Status : 2xx
+    - fail Status : 4xx error, 5xx error
+
+------------------------------------------------------------------------------
+
 ## 작업방식
 1. 메인 저장소를 fork 해온다.
 2. fork 한 Repository를 clone 한다.
@@ -17,5 +67,3 @@ GitFlow 전략을 사용하여 브랜치를 관리합니다.
 + Feature : 기능을 개발하는 브랜치 입니다.
 + Hotfixs : Master 브랜치에서 발생한 버그를 수정하는 브랜치입니다.
 ![image](https://user-images.githubusercontent.com/59078557/211580433-6fd943c3-405e-4bb8-b95e-f522fe631278.png)
-
-
