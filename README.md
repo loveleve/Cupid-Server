@@ -31,7 +31,7 @@
     - Succes Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 회원 조건 검색
-    - path : /users
+    - path : /users/condition?
     - Method : get
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
@@ -41,7 +41,7 @@
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
 - 신고
-    - path : /followers/{username}
+    - path : /restricts/{username}
     - Method : post
     - Success Status : 2xx
     - fail Status : 4xx error, 5xx error
