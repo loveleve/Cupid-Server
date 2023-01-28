@@ -63,6 +63,16 @@ dependencyManagement {
 	}
 }
 
+ext.profile = (!project.hasProperty('profile') || !profile) ? 'dev' : profile
+
+sourceSets {
+	main {
+		resources {
+			srcDirs "src/main/resources-${profile}"
+		}
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }

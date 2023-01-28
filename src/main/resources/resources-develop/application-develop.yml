@@ -1,0 +1,7 @@
+spring:
+  redis:
+    host: localhost
+    port: 6879
+  config:
+    activate:
+      on-profile: dev
