@@ -1,0 +1,15 @@
+spring:
+  config:
+    profiles:
+      group:
+        prd: env-prd
+
+---
+spring:
+  config:
+    activate:
+      on-profile: env-prd
+  redis:
+    host: localhost
+    port: 6879
+

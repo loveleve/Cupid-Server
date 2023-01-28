@@ -1,0 +1,14 @@
+spring:
+  config:
+    profiles:
+      group:
+        dev: env-dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: env-dev
+  redis:
+    host: localhost
+    port: 6879
